@@ -537,17 +537,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Trusted By Section */}
-        <section className="w-full py-8 md:py-12">
-          <div className="container px-4 md:px-6">
-            <h3 className="text-xl font-semibold text-center mb-4">Trusted By</h3>
-            <div className="flex items-center justify-center gap-8 overflow-x-auto">
-              <Image src="/placeholder-logo.svg" width="120" height="60" alt="Exide logo" />
-              <Image src="/placeholder-logo.svg" width="120" height="60" alt="Ceat logo" />
-              <Image src="/placeholder-logo.svg" width="120" height="60" alt="HPCL logo" />
-            </div>
-          </div>
-        </section>
 
         {/* Leadership Section */}
         <section id="leadership" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
@@ -749,6 +738,17 @@ export default function HomePage() {
                   </Button>
                 </form>
               </div>
+            </div>
+          </div>
+
+        {/* Trusted By Section */}
+        <section className="w-full py-8 md:py-12">
+          <div className="container px-4 md:px-6">
+            <h3 className="text-xl font-semibold text-center mb-4">Trusted By</h3>
+            <div className="flex items-center justify-center gap-8 overflow-x-auto">
+              <Image src="/placeholder-logo.svg" width="120" height="60" alt="Exide logo" />
+              <Image src="/placeholder-logo.svg" width="120" height="60" alt="Ceat logo" />
+              <Image src="/placeholder-logo.svg" width="120" height="60" alt="HPCL logo" />
             </div>
           </div>
         </section>
