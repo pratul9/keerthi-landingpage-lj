@@ -27,9 +27,14 @@ export default function HomePage() {
     <div className="flex flex-col min-h-screen max-w-7xl mx-auto">
       {/* Header */}
       <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
-        <Link href="/" className="flex items-center justify-center">
-          <span className="text-2xl font-bold text-primary">KEERTHI</span>
-          <span className="ml-2 text-sm text-muted-foreground">GROUP</span>
+        <Link href="/" className="flex items-center justify-center space-x-2">
+          <Image
+            src="/logo.png"
+            width={60}
+            height={32}
+            alt="Keerthi Group Logo"
+            className="h-8 w-auto"
+          />
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link href="#divisions" className="text-sm font-medium hover:underline underline-offset-4">
@@ -65,15 +70,6 @@ export default function HomePage() {
                   satisfaction. From chemicals to motorcycles, software to lubricants - we deliver innovative solutions
                   that enhance everyday lives.
                 </p>
-              </div>
-              <div className="space-x-4">
-                <Button size="lg" className="h-12 px-8">
-                  Explore Our Divisions
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="lg" className="h-12 px-8 bg-transparent">
-                  Our Story
-                </Button>
               </div>
             </div>
           </div>
@@ -147,7 +143,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/triumph.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi Triumph Showroom"
@@ -202,7 +198,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/chemicals.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi Chemicals Plant"
@@ -253,7 +249,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/xenon.png"
                         width="400"
                         height="300"
                         alt="Xenon Software Dashboard"
@@ -278,8 +274,7 @@ export default function HomePage() {
                       <p className="text-muted-foreground mb-6">
                         Established in 1979 on Old Madras Road, this flagship outlet is among IOC's highest volume dealers,
                         moving 1000–1200 KL of diesel every month. Recognized with Chairman's Club and Gold Circle honors,
-                        the station also stocks SERVO lubricants across nine districts and operates a modern C&F facility
-                        managing up to 1700 KL monthly.
+                        the station also stocks SERVO lubricants across nine districts.
                       </p>
                       <div className="space-y-3 mb-6">
                         <div className="flex items-center gap-2">
@@ -302,7 +297,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/kss.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi Service Station"
@@ -345,7 +340,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/realestate.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi Estates Illustration"
@@ -397,7 +392,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="keerthi&co.jpg"
                         width="400"
                         height="300"
                         alt="Keerthi & Co Distribution"
@@ -446,7 +441,7 @@ export default function HomePage() {
                     </div>
                     <div className="bg-muted/50 p-8 flex items-center justify-center">
                       <Image
-                        src="/placeholder.svg?height=300&width=400"
+                        src="/binary.png"
                         width="400"
                         height="300"
                         alt="Binary INC Lubricants"
@@ -521,9 +516,6 @@ export default function HomePage() {
                     redefine urban living in Bangalore. These developments will blend modern design with eco-friendly
                     practices, creating vibrant spaces that cater to contemporary lifestyles.
                   </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button className="h-12 px-8">Our Leadership</Button>
                 </div>
               </div>
               <Image
@@ -615,6 +607,7 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
+
               <Card>
                 <CardHeader className="text-center">
                   <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
@@ -663,6 +656,23 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
+              
+              <Card>
+                <CardHeader className="text-center">
+                  <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-12 w-12 text-muted-foreground" />
+                  </div>
+                  <CardTitle>Shilpa Karthik</CardTitle>
+                  <CardDescription>Finance &amp; Accounts</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground text-center">
+                    Diligently manages accounting and finances for Keerthi Service Station,
+                    providing the meticulous oversight that keeps operations compliant and efficient.
+                  </p>
+                </CardContent>
+              </Card>
+              
               <Card>
                 <CardHeader className="text-center">
                   <div className="mx-auto w-24 h-24 bg-muted rounded-full flex items-center justify-center mb-4">
@@ -755,9 +765,7 @@ export default function HomePage() {
           <Link href="#" className="text-xs hover:underline underline-offset-4">
             Privacy Policy
           </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4">
-            Careers
-          </Link>
+          
         </nav>
       </footer>
     </div>
